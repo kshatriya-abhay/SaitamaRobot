@@ -212,7 +212,7 @@ multiple triggers at once.
 BLACKLIST_HANDLER = DisableAbleCommandHandler("blacklist", blacklist)
 ADD_BLACKLIST_HANDLER = DisableAbleCommandHandler("addblacklist", add_blacklist)
 UNBLACKLIST_HANDLER = DisableAbleCommandHandler(["unblacklist", "rmblacklist"],
-                                     unblacklist)
+                                                unblacklist)
 BLACKLIST_DEL_HANDLER = MessageHandler(
     (Filters.text | Filters.command | Filters.sticker | Filters.photo)
     & Filters.group, del_blacklist)

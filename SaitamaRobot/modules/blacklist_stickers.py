@@ -481,9 +481,10 @@ BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
     "blsticker", blackliststicker, admin_ok=True)
 ADDBLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
     "addblsticker", add_blackliststicker)
-UNBLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(["unblsticker", "rmblsticker"],
-                                             unblackliststicker)
-BLACKLISTMODE_HANDLER = DisableAbleCommandHandler("blstickermode", blacklist_mode)
+UNBLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
+    ["unblsticker", "rmblsticker"], unblackliststicker)
+BLACKLISTMODE_HANDLER = DisableAbleCommandHandler("blstickermode",
+                                                  blacklist_mode)
 BLACKLIST_STICKER_DEL_HANDLER = MessageHandler(Filters.sticker & Filters.group,
                                                del_blackliststicker)
 
